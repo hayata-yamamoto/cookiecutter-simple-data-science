@@ -12,8 +12,12 @@ class PathManager:
     INTERIM_DIR: Path = DATA_ROOT / "interim"
     PROCESSED_DIR: Path = DATA_ROOT / "processed"
 
-    # src directory
+    # notebooks directory
     NOTEBOOK_DIR = PROJECT_ROOT / "notebooks"
+    EXPLORATORY_DIR = NOTEBOOK_DIR / "exploratory"
+    PREDICTIVE_DIR = NOTEBOOK_DIR / "predictive"
+
+    # src directory
     SRC_ROOT = PROJECT_ROOT / "src"
     DATASETS_DIR = SRC_ROOT / "datasets"
     FEATURES_DIR = SRC_ROOT / "features"
