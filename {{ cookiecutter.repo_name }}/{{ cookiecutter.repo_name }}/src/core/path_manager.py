@@ -4,33 +4,25 @@ from typing import List
 
 class PathManager:
     BASE_DIR: Path = Path(__file__).resolve().parents[2]
-    DATA_ROOT: Path = BASE_DIR / "data"
-    PROJECT_ROOT: Path = BASE_DIR / "{{ cookiecutter.project_name }}"
+    DATA: Path = BASE_DIR / "data"
+    NOTEBOOKS: Path = BASE_DIR / "notebooks"
+    MODULES: Path = BASE_DIR / "modules"
+    TESTS: Path = BASE_DIR / "tests"
+    SRC: Path = BASE_DIR / "src"
 
     # data directory
-    RAW_DIR: Path = DATA_ROOT / "raw"
-    INTERIM_DIR: Path = DATA_ROOT / "interim"
-    PROCESSED_DIR: Path = DATA_ROOT / "processed"
+    RAW: Path = DATA / "raw"
+    INTERIM: Path = DATA / "interim"
+    PROCESSED: Path = DATA / "processed"
 
     # notebooks directory
-    NOTEBOOK_DIR = PROJECT_ROOT / "notebooks"
-    EXPLORATORY_DIR = NOTEBOOK_DIR / "exploratory"
-    PREDICTIVE_DIR = NOTEBOOK_DIR / "predictive"
+    EXPLORATORY: Path = NOTEBOOKS / "exploratory"
+    PREDICTIVE: Path = NOTEBOOKS / "predictive"
 
-    # src directory
-    SRC_ROOT = PROJECT_ROOT / "src"
-    DATASETS_DIR = SRC_ROOT / "datasets"
-    FEATURES_DIR = SRC_ROOT / "features"
-    MODELS_DIR = SRC_ROOT / "models"
-    TASKS_DIR = SRC_ROOT / "tasks"
-    TESTS_DIR = SRC_ROOT / "tests"
-    
-    @staticmethod
-    def get_data_dirs() -> List[Path]:
-        return [PathManager.RAW_DIR, PathManager.INTERIM_DIR, PathManager.PROCESSED_DIR]
-
-    @staticmethod
-    def get_project_dirs() -> List[Path]:
-        return [PathManager.NOTEBOOK_DIR, PathManager.SRC_ROOT, PathManager.DATASETS_DIR, PathManager.FEATURES_DIR,
-                PathManager.MODELS_DIR, PathManager.TASKS_DIR, PathManager.TESTS_DIR]
+    # project directory
+    CORE: Path = SRC / "core"
+    DATASETS: Path = SRC / "datasets"
+    FEATURES: Path = SRC / "features"
+    MODELS: Path = SRC / "models"
+    TASKS: Path = SRC / "tasks"
 
