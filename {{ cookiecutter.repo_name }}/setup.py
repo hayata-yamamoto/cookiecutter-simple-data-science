@@ -11,10 +11,11 @@ def main() -> NoReturn:
 
     setup(
         name="{{ cookiecutter.repo_name }}",
-        author="{{ cookiecutter.author }}",
-        version="{{ cookicutter.version }}",
+        description="{{ cookiecutter.description }}",
+        version="0.1.0",
         install_requires=req,
         packages=find_packages()
     )
+
 if __name__ == '__main__':
     main()
