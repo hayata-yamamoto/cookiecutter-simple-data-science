@@ -1,4 +1,4 @@
-# cookiecutter-simple-data-science
+# Simple Data Science (Cookiecutter)
 
 # Structure 
 
