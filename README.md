@@ -1,5 +1,13 @@
 # Simple Data Science (Cookiecutter)
 
+# Get Started 
+
+```bash
+pip3 install cookiecutter 
+cookiecutter https://github.com/hayata-yamamoto/cookiecutter-data-science-for-team
+```
+
+
 # Structure 
 
 ```text
