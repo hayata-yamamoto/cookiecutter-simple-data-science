@@ -13,8 +13,8 @@
     │   └── raw
     ├── modules
     ├── notebooks
-    │   ├── exploratives
-    │   └── predictives
+    │   ├── exploratory
+    │   └── predictive
     ├── src
     │   ├── config
     │   ├── datasets
