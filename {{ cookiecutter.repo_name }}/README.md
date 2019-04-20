@@ -16,7 +16,7 @@
     │   ├── exploratory
     │   └── predictive
     ├── src
-    │   ├── config
+    │   ├── core
     │   ├── datasets
     │   ├── features
     │   └── models

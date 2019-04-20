@@ -1,4 +1,4 @@
-from .src import commands
+from .src.core import commands
 
 
 def main():
