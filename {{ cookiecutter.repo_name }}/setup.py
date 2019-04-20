@@ -14,7 +14,7 @@ def main() -> NoReturn:
         description="{{ cookiecutter.description }}",
         version="0.1.0",
         install_requires=req,
-        packages=find_packages()
+        packages=find_packages(exclude=["{{ cookiecutter.repo_name }}/data"])
     )
 
 if __name__ == '__main__':
