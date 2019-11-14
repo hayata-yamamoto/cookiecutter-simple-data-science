@@ -4,29 +4,23 @@
 # Get Started 
 
 ```bash
-python3 -m venv venv 
-. venv/bin/activate
-python3 setup.py install # or develop
+$ pip3 install pipenv # if necessary
+$ pipenv --python 3.7 && pipenv sync --dev && pipenv run develop
 ```
 
 
 # Structure 
 ```text
-{{ cookiecutter.repo_name }}/
-├── docs
-└── {{ cookiecutter.repo_name }}
-    ├── data
-    │   ├── interim
-    │   ├── processed
-    │   └── raw
-    ├── modules
-    ├── notebooks
-    │   ├── exploratory
-    │   └── predictive
+{{\ cookiecutter.repo_name\ }}/
+├── data
+│   ├── interim
+│   ├── processed
+│   └── raw
+├── notebooks
+│   ├── exploratory
+│   └── predictive
+└── {{\ cookiecutter.repo_name\ }}
     ├── src
-    │   ├── core
-    │   ├── datasets
-    │   ├── features
-    │   └── models
+    ├── tasks
     └── tests
 ```
