@@ -18,21 +18,16 @@ cookiecutter https://github.com/hayata-yamamoto/cookiecutter-simple-data-science
 cookiecutter-simple-data-science/
 ├── docs
 │   └── docs
-└── {{ cookiecutter.repo_name }}
-    ├── docs
-    └── {{ cookiecutter.repo_name }}
-        ├── data
-        │   ├── interim
-        │   ├── processed
-        │   └── raw
-        ├── modules
-        ├── notebooks
-        │   ├── exploratory
-        │   └── predictive
+└── {{\ cookiecutter.repo_name\ }}
+    ├── data
+    │   ├── interim
+    │   ├── processed
+    │   └── raw
+    ├── notebooks
+    │   ├── exploratory
+    │   └── predictive
+    └── {{\ cookiecutter.repo_name\ }}
         ├── src
-        │   ├── core
-        │   ├── datasets
-        │   ├── features
-        │   └── models
+        ├── tasks
         └── tests
 ```
