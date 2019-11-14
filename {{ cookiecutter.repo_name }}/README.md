@@ -11,7 +11,7 @@ $ pipenv --python 3.7 && pipenv sync --dev && pipenv run develop
 
 # Structure 
 ```text
-{{\ cookiecutter.repo_name\ }}/
+{{ cookiecutter.repo_name }}
 ├── data
 │   ├── interim
 │   ├── processed
@@ -19,7 +19,7 @@ $ pipenv --python 3.7 && pipenv sync --dev && pipenv run develop
 ├── notebooks
 │   ├── exploratory
 │   └── predictive
-└── {{\ cookiecutter.repo_name\ }}
+└── {{ cookiecutter.repo_name }}
     ├── src
     ├── tasks
     └── tests
