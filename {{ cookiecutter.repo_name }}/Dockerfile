@@ -2,9 +2,6 @@ FROM python:3.7-slim
 
 WORKDIR {{ cookiecutter.repo_name }}/
 
-# add environment variables if you want
-ENV GOOGLE_APPLICATION_CREDENTIALS ./credentials/google-credential.json
-
 RUN set -x \
   && apt-get update -yqq \
   && apt-get upgrade -yqq \
