@@ -20,7 +20,7 @@ cookiecutter https://github.com/hayata-yamamoto/cookiecutter-simple-data-science
 cookiecutter-simple-data-science/
 ├── docs
 │   └── docs
-└── {{\ cookiecutter.repo_name\ }}
+└── {{ cookiecutter.repo_name }}
     ├── data
     │   ├── interim
     │   ├── processed
@@ -28,7 +28,7 @@ cookiecutter-simple-data-science/
     ├── notebooks
     │   ├── exploratory
     │   └── predictive
-    └── {{\ cookiecutter.repo_name\ }}
+    └── {{ cookiecutter.repo_name }}
         ├── src
         ├── tasks
         └── tests
