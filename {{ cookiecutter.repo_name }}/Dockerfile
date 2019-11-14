@@ -19,7 +19,6 @@ RUN set -x \
 COPY ./ ./
 
 RUN pip3 install pipenv \
-  && pipenv --python 3.7 \
   && pipenv sync --dev \
   && pipenv run develop \
   && rm -rf /var/lib/apt/lists/*
